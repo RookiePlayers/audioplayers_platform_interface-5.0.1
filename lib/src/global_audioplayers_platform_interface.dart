@@ -12,6 +12,8 @@ abstract class GlobalAudioplayersPlatformInterface
 }
 
 abstract class MethodChannelGlobalAudioplayersPlatformInterface {
+  Future<int?> get audioSessionId;
+
   Future<void> setGlobalAudioContext(AudioContext ctx);
 
   @visibleForTesting

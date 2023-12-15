@@ -17,6 +17,7 @@ mixin MethodChannelGlobalAudioplayersPlatform
   static const MethodChannel _globalMethodChannel =
       MethodChannel('xyz.luan/audioplayers.global');
 
+  @override
    Future<int?> get audioSessionId =>
       _globalMethodChannel.invokeMethod('audioSessionId');
 
